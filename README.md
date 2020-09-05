@@ -1,4 +1,4 @@
-# Geofencing Util
+# Geofencing Util [![Build status](https://build.appcenter.ms/v0.1/apps/bddb975f-df41-41db-8d7e-fec69c21660a/branches/development/badge)](https://appcenter.ms)
 
 ## Features implemented based on:
 1. The home screen has a list of locations with location which is already added. The first time will be empty. Add bottom right side floating button with + icon

@@ -17,11 +17,15 @@ import com.dibyendu.gefenceutil.GeofenceUtilApp
 import com.dibyendu.gefenceutil.R
 import com.dibyendu.gefenceutil.databinding.ActivityGeofenceBinding
 import com.dibyendu.gefenceutil.di.AppComponent
+import com.dibyendu.gefenceutil.util.APP_CENTER_KEY
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.LocationSettingsRequest
 import com.google.android.material.snackbar.Snackbar
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
 
 private const val REQUEST_FOREGROUND_AND_BACKGROUND_PERMISSION_RESULT_CODE = 33
 private const val REQUEST_FOREGROUND_ONLY_PERMISSIONS_REQUEST_CODE = 34
@@ -51,6 +55,7 @@ class GeofenceActivity : AppCompatActivity(R.layout.activity_geofence) {
     override fun onCreate(savedInstanceState: Bundle?) {
         appComponent.inject(this)
         super.onCreate(savedInstanceState)
+        AppCenter.start(application, APP_CENTER_KEY, Analytics::class.java, Crashes::class.java)
         binding = ActivityGeofenceBinding.inflate(layoutInflater)
         checkPermissionsAndStartGeofencing()
     }

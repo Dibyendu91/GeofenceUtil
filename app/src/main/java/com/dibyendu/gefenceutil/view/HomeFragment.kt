@@ -18,6 +18,7 @@ import com.dibyendu.gefenceutil.view.adapter.GeofenceAdapter
 import com.dibyendu.gefenceutil.view.listener.AddClickListener
 import com.dibyendu.gefenceutil.view.viewmodel.GeofenceViewModel
 import com.dibyendu.gefenceutil.view.viewmodel.GeofenceViewModelFactory
+import com.microsoft.appcenter.crashes.Crashes
 
 private const val TAG = "HomeFragment"
 

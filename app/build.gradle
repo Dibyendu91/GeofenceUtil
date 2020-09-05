@@ -62,6 +62,10 @@ dependencies {
     implementation "com.google.dagger:dagger:${daggerVersion}"
     kapt "com.google.dagger:dagger-compiler:${daggerCompilerVersion}"
 
+    // App center
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
     testImplementation "junit:junit:${junitVersion1}"
     androidTestImplementation "androidx.test.ext:junit:${junitVersion}"
     androidTestImplementation "androidx.test.espresso:espresso-core:${espressoCoreVersion}"

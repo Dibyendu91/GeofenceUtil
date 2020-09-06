@@ -55,6 +55,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycleLivedataKtxVersion}"
     // Room Database
     implementation "androidx.room:room-runtime:${roomRuntimeVersion}"
+    androidTestImplementation 'androidx.test:rules:1.3.0'
     kapt "androidx.room:room-compiler:${roomCompilerVersion}"
     implementation "androidx.room:room-ktx:${roomKtxVersion}"
     implementation "com.google.android.gms:play-services-location:${playServicesLocationVersion}"
@@ -69,4 +70,5 @@ dependencies {
     testImplementation "junit:junit:${junitVersion1}"
     androidTestImplementation "androidx.test.ext:junit:${junitVersion}"
     androidTestImplementation "androidx.test.espresso:espresso-core:${espressoCoreVersion}"
+    androidTestImplementation "com.microsoft.appcenter:espresso-test-extension:1.4"
 }
